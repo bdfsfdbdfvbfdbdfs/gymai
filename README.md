@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GymAI
 
-## Getting Started
+GymAI は、筋トレ管理、食事管理、InBody 記録、AI コーチングを 1 つにまとめた Next.js アプリです。
 
-First, run the development server:
+## 目的
+
+以下の 4 つを 1 つのアプリに統合します。
+
+- Strong ライクなワークアウト管理
+- InBody 記録
+- 食事・PFC 管理
+- ChatGPT 連携を想定した AI コーチング
+
+## 主な機能
+
+### Home
+
+- 体重カード
+- 摂取カロリーカード
+- 今日のメニュー
+- ベンチプレス進捗
+- AI コメント
+
+### Workout
+
+- テンプレート表示
+- セット管理
+- 重量・回数
+- チェックボックス
+- PR 管理の土台
+- 1RM 自動計算
+- 履歴表示
+- ボリューム計算
+
+### Food
+
+- 食事追加
+- PFC 入力
+- カロリー自動計算
+- 今日の合計
+- 目標カロリーとの比較
+- 将来的な画像解析追加を想定した設計
+
+### InBody
+
+- 体重
+- 骨格筋量
+- 体脂肪率
+- BMI
+- 内臓脂肪
+- 基礎代謝
+- 履歴
+- 簡易グラフ
+- AI 分析の土台
+
+### AI
+
+現在はモックデータで以下を表示します。
+
+- トレーニング提案
+- 食事提案
+- リコンプ分析
+- 疲労判定
+- ベンチ 100kg ロードマップ
+
+## 技術スタック
+
+- Next.js
+- TypeScript
+- TailwindCSS
+- localStorage
+- Repository Pattern
+- PWA 対応
+
+## セットアップ
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm install

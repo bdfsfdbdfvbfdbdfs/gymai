@@ -1,0 +1,10 @@
+{
+  "name": "GymAI",
+  "short_name": "GymAI",
+  "description": "Strong × InBody × AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f4f6",
+  "theme_color": "#000000",
+  "icons": []
+}
